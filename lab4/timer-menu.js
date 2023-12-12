@@ -1,14 +1,16 @@
 //IIFE(Immediately Invoked Function Expression) - функция, которая вызывается немедленно после ее создания.
 // Такой подход часто используется в JS для создания локальной области видомости, предотвращения утечек переменных в глобальную область видимости и изолиции кода 
 
-(function() {
-    let before_load_time = new Date().getTime();
-  
-    window.onload = function() {
-      document.getElementById("loadTimeInfo").innerHTML =
-        "Page load time is <b>" + (new Date().getTime() - before_load_time) / 1000 + "</b> seconds";
-    };
-})();
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('load', function() {
+        var loadTime = performance.now();
+        console.log('Время загрузки страницы: ' + loadTime + ' мс');
+
+        var element = document.getElementById('loadTimeInfo');
+        element.innerHTML = 'Время загрузки страницы: ' + loadTime.toFixed(3) + ' мс';
+    });
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var url = window.location.pathname;
