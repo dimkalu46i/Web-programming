@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    padding-left: 0;
+    padding-right: 50px;
+    margin-bottom: 0;
+}
+
+.menu-item {
+    line-height: 50px;
+    word-spacing: 10%;
+    top: 30px;
+    left: 40px;
+    padding: 30px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.menu-item a {
+    color: blue;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: all .09s ease-in-out;
+}
+
+.menu-item a:hover {
+    opacity: 1.5;
+    cursor: pointer;
+}
+
+.menu-list li.active {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 25px;
+}
+
+body {
+    width: 100%;
+    background-color: #76DBD6;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+body header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background-color: #46FAC6;
+    font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+    padding: 10px 0.5;
+    font-size: xx-large;
+    color: #467FFA;
+}
+
+body footer {
+    font-size: medium;
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.main-section {
+    margin: 0px 0px 0px 50px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    text-indent: 0%;
+    float: left;
+}
+
+.img-section {
+    width: 300px;
+    box-shadow:5px 6px 1px 6px #46FAC6;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+.img-cards {
+    width: 200px;
+}
+
+table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns: 
+    minmax(150px, 3.33fr)
+    minmax(150px, 1.67fr)
+}
+
+thead, tr {
+    display: contents;
+}
+
+th, td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+    font-size:1.1rem;
+    background-color: #46F0F9;
+}
+
+tr:nth-child(even) td {
+    background-color: #46B8FA;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none;
+    }
+}
