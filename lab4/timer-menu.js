@@ -1,20 +1,13 @@
-//LLFE(Immediately Invoked Function Expression) - функция, которая вызывается немедленно после ее создания.
+//IIFE(Immediately Invoked Function Expression) - функция, которая вызывается немедленно после ее создания.
 // Такой подход часто используется в JS для создания локальной области видомости, предотвращения утечек переменных в глобальную область видимости и изолиции кода 
 
-(function () {
-    // Функция для подсчёта времени загрузки страницы
-    function calculateLoadTime() {
-        var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
-        return 'Время загрузки страницы: ' + loadTime + ' мс';
-    }
-
-    // Подписка на событие загрузки страницы
-    window.addEventListener('load', function () {
-        var loadTimeInfo = document.getElementById('loadTimeInfo');
-        if (loadTimeInfo) {
-            loadTimeInfo.textContent = calculateLoadTime();
-        }
-    });
+(function() {
+    let before_load_time = new Date().getTime();
+  
+    window.onload = function() {
+      document.getElementById("loadTimeInfo").innerHTML =
+        "Page load time is <b>" + (new Date().getTime() - before_load_time) / 1000 + "</b> seconds";
+    };
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
