@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="style.css">
         <title>Поиск отелей на любой вкус</title>
-        <meta charset="utf-8">
-        <meta name="description" content="отели, номер на ночь, хостел, аренда жилья">
-        <script src="https://kit.fontawesome.com/e416d43f81.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="style_3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <meta name="description" content="отели, номер на ночь, хостел, аренда жилья" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
     </head>
     <body>
         <header>
             <h1>
                 Найди жильё на ночь
+                <i class="fa-solid fa-house-tsunami" style="color: #467FFA;"></i>
             </h1>
-            <i class="fa-solid fa-house-tsunami" style="color: #467FFA;"></i>
-            <nav class="nav">
-                <a href="@">Где искать</a>
-                <a href="@">На какие даты</a>
-                <a href="@">Количество человек</a>
-                <a href="@">Об авторе</a>
+            <nav>
+                <ul>
+                    <li><a href="@">Где искать</a></li>
+                    <li><a href="@">На какие даты</a></li>
+                    <li><a href="@">Количество человек</a></li>
+                    <li><a href="@">Об авторе</a></li>
+                </ul>
             </nav>
         </header>
+
         <main>
-            <section class="conteiner">
-                <img src="https://sportishka.com/uploads/posts/2022-03/1647341418_11-sportishka-com-p-krasivie-basseini-mira-turizm-krasivo-foto-13.jpg" style="img">
+            <img src="https://sportishka.com/uploads/posts/2022-03/1647341418_11-sportishka-com-p-krasivie-basseini-mira-turizm-krasivo-foto-13.jpg" class="img-section">
+            <section class="main-section">
                 <h2>Что это за сайт?</h2>
+                <p>
                 Этот сайт предназначен для удобного поиска и бронирования аппартаментов.
                 С его помощью можно:
+                </p>
                 <ul>
                     <li>Легко найти подходящее конкретно для вас жильё</li>
                     <li>Отменить бронь в случае, если вы передумали</li>
@@ -38,12 +48,157 @@
                     <li>Указать количество человек для совместного проживания(Travellers)</li>
                 </ol>
             </section>
+            <section class="cards-wrapper">
+                <h2>Особенности видов жилья</h2>
+                <div class="card">
+                    <h3>Апартаменты</h3>
+                    <img src="https://riakursk.ru/assets/cache_image/uploads/2022/04/orenda-kvartir_1200x700_28a.jpg" class="img-cards">
+                    <a class="card-content">
+                        Это полноценная квартира с кухней, спальней, туалетом и ванной комнатой. 
+                        На этом варианте можно остановиться, если путешествуете большой компанией или семьей. 
+                        Такой тип жилья может быть выгодным, и если вы уезжаете на долгое время и хотите жить комфортно.
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Отель</h3>
+                    <img src="https://www.worldrainbowhotels.com/wp-content/uploads/2019/05/Crown-Metropol-Perth.jpg" class="img-cards">
+                    <a class="card-content">
+                        В отеле, как правило, большой выбор: номеров, типов питания, вариантов досуга. 
+                        Помимо этого, есть дополнительные услуги: возможность воспользоваться конференц-залами, ресторанными комплексами и SPA-зонами.
+                        Чем больше звезд у отеля, тем выше качество услуг в нем и цена.
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Хостел</h3>
+                    <img src="https://burobiz-a.akamaihd.net/uploads/images/47371/large_хос.jpg" class="img-cards">
+                    <a class="card-content">
+                        Небольшая молодежная гостиница, которая дает койко-место в общем номере. 
+                        Как правило, можно выбрать номер для четырех, шести, восьми или десяти человек. 
+                        Удобств минимум: тумбочка, мини-сейф, общий туалет и душ. В качестве бонуса — отличная возможность познакомиться с новыми людьми.
+                        Как правило, цены на ночь в хостеле начинаются от 200 рублей.
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>B&B</h3>
+                    <img src="https://s3.amazonaws.com/arn-property-images/412738/7897883_0.jpg" class="img-cards">
+                    <a class="card-content">
+                        Bed and breakfast, или B&B, — от английского "кровать и завтрак". Бюджетный вариант, если нужно где-то переночевать и позавтракать. 
+                        Дополнительные услуги — за отдельную плату.
+                        B&B в основном располагаются в мини-гостиницах или частных домах. Цены примерно как у двухзвездочных отелей.
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Мотель</h3>
+                    <img src="https://sk-sozidanie.ru/upload/iblock/274/274db44922b61758dc87b55489a598d1.jpg" class="img-cards">
+                    <a class="card-content">
+                        Небольшая гостиница, как правило — на автомобильной трассе. В номере обязательно есть ванная комната, кровать и телевизор. 
+                        Дополнительных услуг, в том числе работы горничных, не предусмотрено. У мотелей часто есть собственная парковка, на которую выходят двери номеров. 
+                        Для бронирования могут быть доступны как койко-места, так и отдельные номера.
+                        Мотели считают достаточно дешевым жильем, которое лучше всего подойдет для автопутешественников.
+                    </a>
+                </div>
+            </section>
         </main>
+
         <footer>
-            <h3>Немного об авторе</h3>
-            <p>Создавать свой сайт довольно сложно, но я со всем справлюсь, ведь, как
-            говорил <b>Генри Форд</b>:<br><br> <q cite="https://allcitations.ru/tema/citaty-so-smyslom"><i>Если тебе тяжело, значит ты поднимаешься в гору. Если тебе легко, значит ты летишь в пропасть.</i></q></p>
-            <p><q>H<sub>2</sub>O: Просто добавь воды</q> - мой любимый сериал</p>
+            <h2>Самые популярные способы забронировать жильё</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Сайт сервиса</th>
+                            <th>Доля бронирований в %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ostrovok.ru</td>
+                            <td>27,9</td>
+                        </tr>
+                        <tr>
+                            <td>101hotels.com</td>
+                            <td>9,5</td>
+                        </tr>
+                        <tr>
+                            <td>Яндекс.Путешествия</td>
+                            <td>8,7</td>
+                        </tr>
+                        <tr>
+                            <td>Bronevik.com</td>
+                            <td>6,8</td>
+                        </tr>
+                        <tr>
+                            <td>Суточно.ру</td>
+                            <td>6,4</td>
+                        </tr>
+                        <tr>
+                            <td>Забронируй.ру</td>
+                            <td>2,4</td>
+                        </tr>
+                        <tr>
+                            <td>OneTwoTrip</td>
+                            <td>2,3</td>
+                        </tr>
+                        <tr>
+                            <td>Academiservice</td>
+                            <td>2,2</td>
+                        </tr>
+                        <tr>
+                            <td>Avito</td>
+                            <td>1,8</td>
+                        </tr>
+                        <tr>
+                            <td>Прочие сайты</td>
+                            <td>2,4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <section class="mobile-hide">     
+                <h3>Немного об авторе</h3>
+                <p>Создавать свой сайт довольно сложно, но я со всем справлюсь, ведь, как
+                говорил <b>Генри Форд</b>:<br><br> <q cite="https://allcitations.ru/tema/citaty-so-smyslom"><i>Если тебе тяжело, значит ты поднимаешься в гору. Если тебе легко, значит ты летишь в пропасть.</i></q></p>
+                <p><q>H<sub>2</sub>O: Просто добавь воды</q> - мой любимый сериал</p>
+            </section>
         </footer>
+
+        <template id="commentTemplate">
+            <li>
+                Пользователь: {{email}}<br>
+                Комментарий: {{body}}
+            </li>
+        </template>
+        
+        <div id="temp"></div>
+
+        <div id="preloader">
+            <img src="Spin-1s-200px.gif" alt="Loading..." />
+        </div>
+
+        <script src="data-loader.js"></script>
+        <script src="timer-menu.js"></script>
+        <script src="https://kit.fontawesome.com/e416d43f81.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e416d43f81.js" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<!-- 
+    2)  1) загрузить шрифты
+        2) запушить 3-ю
+        3) почитать em rem bem что это
+        4) всё что с текстом указ через условные (пункт выше)
+        5) сделать тени у картино
+        6) что делает font-weight
+        7) цвета можно менять ещё с помощью hsl(), как и rgb()
+        8) добавить через css font-style вместо тегов курсив, жирный, перечёркнутый
+        9) text-decoratins
+        10) text-transform
+
+    3)  1) сделать так, чтобы grid висел на каждой ячейке
+
+    4)  1) сделать всю лабу
+
+    5)  1) изменить тематику формы
+        2) сделать запись и обработку информации из формы
+
+    6)  1) сделать карточки диалогов более красивыми, с помощью template
+
+-->
